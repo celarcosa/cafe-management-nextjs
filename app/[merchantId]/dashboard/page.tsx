@@ -1,7 +1,6 @@
 import DashboardStats from "@/components/dashboard/dashboardStats";
 import Header from "@/components/common/header";
 import AreaChart from "@/components/common/charts/areaChart";
-import React from "react";
 import PendingOrders from "@/components/dashboard/pendingOrders";
 import StaffOnDuty from "@/components/dashboard/staffOnDuty";
 import DonutChart from "@/components/common/charts/donutChart";
@@ -22,18 +21,7 @@ export default async function DashboardPage ({ params }: any) {
                 <Header title="Dashboard" merchantId={merchantId}></Header>
             </div>
             <div className="w-full">
-                <div className="flex justify-end">
-                    <div className="dropdown dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-sm rounded-full m-1">Last 7 Days</div>
-                        <ul tabIndex={0}
-                            className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                            <li><a>Last 7 Days</a></li>
-                            <li><a>Last 30 Days</a></li>
-                            <li><a>Year to Date</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <DashboardStats/>
+                <DashboardStats />
             </div>
             <div className="mt-4">
                 <div className="grid lg:grid-cols-[1fr_35%] grid-cols-1 lg:grid-rows-1 grid-rows-2 gap-4">
@@ -44,7 +32,7 @@ export default async function DashboardPage ({ params }: any) {
                                        values={[305, 357, 571, 453, 221, 328, 245]} width="100%"/>
                             <div className="flex justify-end items-center text-xs opacity-60">
                                 <div className="mr-2">Avg. Revenue</div>
-                                <div className="">{formatCurrency(27200, 'PHP', true)}</div>
+                                <div className="">{formatCurrency(385, 'USD', true)}</div>
                             </div>
                         </div>
                     </div>
@@ -58,7 +46,7 @@ export default async function DashboardPage ({ params }: any) {
                                            values={[45, 52, 138, 45, 19, 53, 32]}/>
                                 <div className="flex justify-end items-center text-xs opacity-60">
                                     <div className="mr-2">Avg. Sales</div>
-                                    <div className="">5 orders</div>
+                                    <div className="">52 orders</div>
                                 </div>
                             </div>
                         </div>
