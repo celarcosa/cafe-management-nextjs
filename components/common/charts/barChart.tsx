@@ -17,7 +17,6 @@ export default function BarChart(props: any) {
         ],
         options: {
             chart: {
-                type: "bar",
                 toolbar: {
                     show: false,
                 },

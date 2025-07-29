@@ -12,7 +12,6 @@ export default function LineChart(props: any) {
     const options = {
         chart: {
             height: 280,
-            type: 'area',
             toolbar: { show: false },
         },
         dataLabels: {

@@ -10,9 +10,6 @@ export default function DonutChart(props: any) {
     const labels = props?.series?.slice(0, props?.max || 5) || [];
     const values = props?.values?.slice(0, props?.max || 5) || [];
     const options = {
-        chart: {
-            type: 'donut'
-        },
         labels: labels,
         colors: ['#9226b1', '#5c2de8', '#4a9fe4', '#ea7146', '#e1466a'],
         dataLabels: {
@@ -22,17 +19,14 @@ export default function DonutChart(props: any) {
             }
         },
         legend: {
-            position: 'bottom',
+            position: "bottom",
         },
         responsive: [
             {
                 breakpoint: 480,
                 options: {
                     chart: {
-                        width: 280,
-                    },
-                    legend: {
-                        position: 'bottom',
+                        width: 320,
                     },
                 },
             },
@@ -43,6 +37,7 @@ export default function DonutChart(props: any) {
         <div>
             <h2 className="text-xl opacity-60 pb-2">{props.title}</h2>
             <div className="w-full h-auto">
+                {/*@ts-ignore*/}
                 <Chart options={options} series={values} type="donut" width={props.width || '100%'}/>
             </div>
         </div>
