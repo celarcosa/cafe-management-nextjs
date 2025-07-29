@@ -140,7 +140,7 @@ export default function OrdersAccordion() {
                                         As Ready
                                     </button>
                                     <div className="text-gray-400 mr-4">Preparing</div>
-                                    <div>{formatCurrency(180, 'PHP', false)}</div>
+                                    <div>{formatCurrency(5.6, 'USD', false)}</div>
                                 </div>
                             </li>
 
@@ -155,7 +155,7 @@ export default function OrdersAccordion() {
                                 </div>
                                 <div className="flex items-center">
                                     <div className="text-gray-400 mr-4">Ready</div>
-                                    <div>{formatCurrency(480, 'PHP', false)}</div>
+                                    <div>{formatCurrency(12.5, 'USD', false)}</div>
                                 </div>
                             </li>
 
@@ -176,7 +176,7 @@ export default function OrdersAccordion() {
                                         className="btn btn-sm btn-ghost btn-error hover:text-white rounded-full mr-4">Mark As Unavailable
                                     </button>
                                     <div className="text-gray-400 mr-4">Pending</div>
-                                    <div>{formatCurrency(190, 'PHP', false)}</div>
+                                    <div>{formatCurrency(3.4, 'USD', false)}</div>
                                 </div>
                             </li>
                         </ul>
@@ -186,7 +186,7 @@ export default function OrdersAccordion() {
                                 <div className="ml-2 text-right row-start-1 col-start-2">4</div>
                                 <div className="font-semibold text-right row-start-2 col-start-1">Total Amount:</div>
                                 <div
-                                    className="ml-2 text-right row-start-2 col-start-2">{formatCurrency(850, 'PHP', false)}</div>
+                                    className="ml-2 text-right row-start-2 col-start-2">{formatCurrency(21.5, 'USD', false)}</div>
                             </div>
                         </div>
                         <div className="flex justify-end items-center mt-8">

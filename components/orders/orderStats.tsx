@@ -10,17 +10,17 @@ export default function OrderStats () {
                         <ShoppingCart/>
                     </div>
                     <div className="stat-title">Active Orders</div>
-                    <div className="stat-value">4</div>
-                    <div className="stat-desc">21% more than last month</div>
+                    <div className="stat-value">2</div>
+                    <div className="stat-desc">2 pending</div>
                 </div>
 
                 <div className="stat lg:mt-0 mt-2 bg-white">
                     <div className="stat-figure text-emerald-300">
-                        <ShoppingCart/>
+                        <PiggyBank/>
                     </div>
-                    <div className="stat-title">Pending Orders</div>
-                    <div className="stat-value">2</div>
-                    <div className="stat-desc">21% more than last month</div>
+                    <div className="stat-title">Today's Revenue</div>
+                    <div className="stat-value">{formatCurrency(51.8, 'USD', true)}</div>
+                    <div className="stat-desc">Avg. Daily Revenue {formatCurrency(123.48, 'USD', true)}</div>
                 </div>
 
                 <div className="stat lg:mt-0 mt-2 bg-white">
@@ -28,8 +28,8 @@ export default function OrderStats () {
                         <Clock/>
                     </div>
                     <div className="stat-title">Avg. Preparation Time</div>
-                    <div className="stat-value">15.2 m</div>
-                    <div className="stat-desc">21% more than last month</div>
+                    <div className="stat-value">5.2 m</div>
+                    <div className="stat-desc">Longest Time 23m</div>
                 </div>
             </div>
         </div>

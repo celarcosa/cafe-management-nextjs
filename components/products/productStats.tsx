@@ -10,7 +10,7 @@ export default function ProductStats () {
                     </div>
                     <div className="stat-title">Products</div>
                     <div className="stat-value">34</div>
-                    <div className="stat-desc">21% more than last month</div>
+                    <div className="stat-desc"></div>
                 </div>
 
                 <div className="stat lg:mt-0 mt-2 bg-white">
@@ -19,7 +19,7 @@ export default function ProductStats () {
                     </div>
                     <div className="stat-title">Out of Stock</div>
                     <div className="stat-value">3</div>
-                    <div className="stat-desc">21% more than last month</div>
+                    <div className="stat-desc"></div>
                 </div>
             </div>
         </div>
